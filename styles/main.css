@@ -1,0 +1,438 @@
+*,
+::after,
+::before {
+  box-sizing: border-box !important;
+}
+body {
+  background-color: #f9f9f9 !important;
+}
+.sprite {
+  background-image: url('../images/icons/sprite.png');
+}
+.nopadding { padding: 0px; }
+.pull-right { float: right; }
+.pull-left { float: left; }
+.hide {
+  display: none;
+}
+/* ===Header start== */
+header > nav {
+  box-shadow: none !important;
+  border-bottom: 1px solid #ddd;
+}
+/* ==Flight Wrapper== */
+.headding h3 {
+  font-weight: bold;
+}
+.headding h3 + p {
+  color: #999;
+}
+.field-row {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.field-row .form-group {
+  margin: 0px 20px 0px 0px;
+}
+.field-row .form-group label {
+  margin-bottom: 0px;
+  font-size: 13px;
+  padding-left: 27px;
+}
+/*==Destion Form Start==*/
+.destination-form .md-form {
+  margin-bottom: 0px;
+}
+.wrapper-flight .destination-form::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto;
+  width: 18px;
+  height: 15px;
+  background-image: url('../images/icons/sprite.png');
+  background-position: -560px -144px;
+}
+.destination-form .md-form label {
+  top: 17px;
+}
+.destination-form .md-form .form-control {
+  margin-bottom: 0px;
+  padding-bottom: 0.2rem;
+  padding-top: 0.6rem;
+}
+.destination-form .md-form label.active {
+  transform: translateY(-110%);
+}
+/* ==End== */
+/* ==Date Wrapper== */
+.date-wrapper {
+  margin: 7.5px 0px;
+}
+.date-wrapper .md-form {
+  margin: 7.5px 0px;
+}
+.date-wrapper .md-form {
+  max-width: 150px;
+  width: 100%;
+}
+.dd, .dt {
+  position: relative;
+}
+.dt span {
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.date-wrapper .datepicker {
+  border: solid 1px #dedede;
+  color: #999;
+  margin: 0px;
+  padding: 8px 15px 7px 15px;
+  width: 100%;
+  height: 32px;
+  font-size: 13px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.calendarIcon .calender {
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background-position: -480px -144px;
+}
+/*== Persion Wrapper==*/
+.persion-wrapper .md-form {
+  margin-bottom: 0px;
+}
+.persion-wrapper .select-dropdown {
+  margin: 0px !important;
+}
+.persion-wrapper span.caret {
+  top: 9px;
+}
+.mdb-select + span.hint {
+  font-size: 12px;
+  color: #999;
+}
+.moreOption, .searchBtnContainer, .moreOptionDetails {
+  padding: 7.5px 0px;
+}
+.moreOption > p {
+  margin-bottom: 0px;
+}
+.moreOption > p a {
+  font-size: 13px;
+}
+.moreOption .dArrow {
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+  margin-top: 4px;
+  background-position: 0px -592px;
+}
+.wrapper-hotel .searchBtnContainer {
+  margin-top: 20px;
+}
+.trustMarkers {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  width: 149px;
+  height: 137px;
+  background-position: -300px -6px;
+  background-image: url('../images/icons/hotelSprite.png');
+}
+.searchBtnContainer {
+  border-top: dotted 1px #999;
+  margin-bottom: 20px;
+}
+.searchBtnContainer .md-form {
+  margin-bottom: 0px;
+}
+.searchBtnContainer .btn {
+  margin-left: 0px;
+  margin-right: 0px;
+  float: right;
+}
+/*==Packages Start==*/
+.checkbox_styling > label {
+  font-size: 13px;
+  top: 3px;
+  line-height: 16px;
+}
+/* =End= */
+.flex-box {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex-box >  div {
+  padding-top: 30px;
+}
+
+/* ===Left container=== */
+.left-container {
+  height: 300px;
+  padding-right: 0px;
+}
+.left-nav {
+  margin: 0px;
+  padding: 0px;
+}
+.left-nav > li {
+  float: left;
+  width: 100%;
+  border: 1px solid transparent;
+  border-top-color: rgba(0,0,0,0.05);
+  border-right: none;
+  height: 46px;
+  position: relative;
+}
+.left-nav > li:last-child {
+  border-bottom-color: rgba(0,0,0,0.05);
+}
+.left-nav > li.active {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.left-nav > li.active::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: #fff;
+  right: -3px;
+  top: 0px;
+  z-index: 1;
+}
+.left-nav > li::after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  background-position: -3px -192px;
+  width: 10px;
+  height: 15px;
+  filter: alpha(opacity=70);
+  opacity: 0.2;
+  cursor: pointer;
+  background-image: url('../images/icons/searchSprite14.png');
+}
+.left-nav > li.active::after {
+  opacity: 1;
+}
+.left-nav > li > a {
+  display: block;
+  padding: 10px 13px;
+  color: #000;
+  line-height: 26px;
+}
+.left-nav > li > a .sprite {
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  font-size: 21px;
+  color: #7d7979;
+}
+.flights { background-position: -30px -686px; }
+.hotels { background-position: -64px -654px; }
+.activities { background-position: -238px -718px; }
+.packages { background-position: -144px -654px; }
+.trains { background-position: -106px -654px; }
+.flightDeals { background-position: -106px -654px; }
+.mobile { background-position: -283px -654px; }
+.trains { background-position: -106px -654px; }
+.hideB2B { background-position: -174px -654px; }
+/* ===center container=== */
+.center-container {
+  background: #fff;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  position: relative;
+  -webkit-box-shadow: -2px 0 2px #eee,2px 0 2px #eee;
+  box-shadow: -2px 0 2px #eee,2px 0 2px #eee;
+}
+
+/* ===center container=== */
+.right-container {}
+.block {
+  display: block;
+}
+.specialBlock {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 1px 2px #eee;
+  box-shadow: 0px 1px 2px #eee;
+  position: relative;
+  z-index: 2;
+}
+.dealHeader {
+  padding: 10px 15px 5px 15px;
+  text-align: left;
+  border-bottom: 1px dashed #bbb;
+}
+.dealSliderTitle.hotels { background-position: -320px -160px; }
+.searchSprite {
+  background-image: url('../images/icons/searchSprite14.png?v=701466');
+  background-repeat: no-repeat;
+}
+.dealSliderTitle {
+  background-position: -320px -128px;
+  width: 180px;
+  height: 31px;
+  text-indent: -9999px;
+  display: inline-block;
+}
+.slider-data .carousel-multi-item {
+  margin-bottom: 0px;
+}
+.offerTitle {
+  font-size: 13px;
+  font-weight: bold;
+}
+.slider-data .carousel-item .card {
+  padding: 8px;
+}
+.slidesjs-slide a {
+  font-weight: 400;
+}
+.truncate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 1.25em;
+}
+.offerDescription {
+  font-size: 12px;
+  color: #666;
+}
+.offerLink {
+  font-size: 13px;
+  line-height: 1.35em;
+  margin: 0.25em 0;
+}
+/*==Footer start===*/
+footer {
+  float: left;
+  width: 100%;
+  border-top: solid 1px #ccc;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+footer .top-footer {
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+.left-footer .img {
+  max-width: 200px;
+}
+.right-footer h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.right-footer h4 span {
+  display: block;
+}
+.right-footer h4 span:last-child {
+  font-size: 15px;
+}
+.right-footer h4 span:last-child > a {
+  color: #0275d8;
+  text-decoration: none;
+}
+/* ==Global Footer start== */
+.globalFooter {
+  border-top: solid 1px #ccc;
+  padding-top: 10px;
+}
+.globalFooter nav {
+  float: left;
+  width: 100%;
+}
+.inline, .secondaryLinks {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.inline li {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  font-size: 13px;
+}
+.inline li a {
+  color: #0275d8;
+}
+.secondaryLinks li {
+  color: #999;
+  float: left;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.secondaryLinks li a {
+  color: #999;
+}
+.bottom-footer {
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+  border-top: solid 1px #ccc;
+  margin-top: 10px;
+}
+/*==Search Page start==*/
+.modify-search {
+  border-bottom: solid 1px #ccc;
+  padding: 8px 0px;
+  background-color: #f5f5f5;
+}
+.modify-btn {
+  background-color: #f9f9f9;
+  border: solid 1px #999;
+  font-size: 14px;
+  border-radius: 2px;
+}
+.left-wrapper {
+  border-right: solid 1px #eee;
+}
+ul.filter {
+  margin: 0px;
+  padding: 0px;
+  line-height: none;
+}
+ul.filter > li {
+  float: left;
+  width: 100%;
+  border-bottom: solid 1px #eee;
+}
+ul.filter > li > span {
+  display: block;
+}
+li.headding span {
+  color: #666;
+  font-size: 14px;
+  padding: 8px 0px 3px 0px;
+  border-bottom: solid 1px #eee;
+}
+li.headding input {
+  width: 100%;
+  border: solid 1px #eee;
+  padding: 5px 10px;
+  font-size: 14px;
+  height: inherit;
+  margin: 8px 0px;
+}
