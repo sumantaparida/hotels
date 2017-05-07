@@ -140,6 +140,9 @@ header > nav {
 .wrapper-hotel .searchBtnContainer {
   margin-top: 20px;
 }
+.wrapper-hotel .headding {
+  min-height: 100px;
+}
 .trustMarkers {
   position: absolute;
   right: 0;
@@ -435,4 +438,12 @@ li.headding input {
   font-size: 14px;
   height: inherit;
   margin: 8px 0px;
+}
+/* Theams */
+.tButton {
+  padding: 10px;
+  font-size: 12px;
+}
+address {
+  height: 16px;
 }
