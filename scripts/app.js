@@ -12,7 +12,6 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $url
 	    templateUrl: 'views/packages.html',
 	    controller: 'packagesCtrl',
 	    authenticate: true
-<<<<<<< HEAD
 	  })
 		.state('searchpage', {
 			url: '/searchpage',
@@ -20,9 +19,6 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $url
 			controller: 'searchCtrl',
 			authenticate: true
 		});
-=======
-	  });
->>>>>>> 26d56906f211fc76eabb8fa0c1c376c720a6b683
 		$urlRouterProvider.otherwise("/");
 	// $locationProvider.html5Mode({
 	//   enabled: true,
@@ -42,12 +38,9 @@ app.controller("packagesCtrl",['$scope','$state', function($scope, $state){
 	$('.datepicker').pickadate();
 	$('.mdb-select').material_select();
 }]);
-<<<<<<< HEAD
 // hotelSearchController
 app.controller("searchCtrl",['$scope','$state', function($scope, $state){
 	$scope.state4 = $state.is('packages');
 	$('.datepicker').pickadate();
 	$('.mdb-select').material_select();
 }]);
-=======
->>>>>>> 26d56906f211fc76eabb8fa0c1c376c720a6b683
