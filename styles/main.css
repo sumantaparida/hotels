@@ -56,7 +56,7 @@ header > nav {
   background-position: -560px -144px;
 }
 .destination-form .md-form label {
-  top: 17px;
+  top: 5px !important;
 }
 .destination-form .md-form .form-control {
   margin-bottom: 0px;
@@ -64,7 +64,7 @@ header > nav {
   padding-top: 0.6rem;
 }
 .destination-form .md-form label.active {
-  transform: translateY(-110%);
+  transform: translateY(-60%);
 }
 /* ==End== */
 /* ==Date Wrapper== */
@@ -139,6 +139,9 @@ header > nav {
 }
 .wrapper-hotel .searchBtnContainer {
   margin-top: 20px;
+}
+.wrapper-hotel .headding {
+  min-height: 100px;
 }
 .trustMarkers {
   position: absolute;
@@ -435,4 +438,12 @@ li.headding input {
   font-size: 14px;
   height: inherit;
   margin: 8px 0px;
+}
+/* Theams */
+.tButton {
+  padding: 10px;
+  font-size: 12px;
+}
+address {
+  height: 16px;
 }
