@@ -57,9 +57,9 @@
       </div>
       <div class="col-xs-12 col-sm-9 right-wrapper">
         <div class="property-listing list-view">
-          <div class="row">
+          <div class="row" ng-init="names=['1','2','3','4','5','6','7']">
 
-            <div class="item-wrap infobox_trigger item-modern-apartment-on-the-bay">
+            <div class="item-wrap infobox_trigger item-modern-apartment-on-the-bay" ng-repeat="x in names">
               <div class="property-item table-list">
                 <div class="table-cell">
                   <div class="figure-block">
