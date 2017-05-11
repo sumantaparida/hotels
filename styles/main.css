@@ -408,6 +408,8 @@ footer .top-footer {
   border: solid 1px #999;
   font-size: 14px;
   border-radius: 2px;
+  padding: 5px 15px;
+  font-weight: 400;
 }
 .left-wrapper {
   border-right: solid 1px #eee;
