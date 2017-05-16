@@ -1935,8 +1935,8 @@ h4 {
 }
 
 .item-body .date p {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 16px;
     margin: 0;
     font-weight: 300;
     text-transform: inherit;
@@ -7188,9 +7188,14 @@ h4 {
 .item-body .amenities {
     min-height: 40px
 }
-
-.item-body .amenities span {
-    margin-right: 10px
+.item-body .hotel-feature span {
+  color: #769bd8;
+  margin-right: 7px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.item-body .amenities span .fa {
+  color: #ea923a;
 }
 
 @media (max-width: 481px) {
@@ -18572,7 +18577,7 @@ div[class*=col-] >.item-wrap {
 }
 
 .sidebar-white .widget+.widget {
-    margin-top: 30px!important
+    margin-top: 10px!important
 }
 
 @media (max-width: 991px) {
