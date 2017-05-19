@@ -3669,7 +3669,8 @@ h4 {
     margin: 0 0 10px;
     font-weight: 500;
     text-transform: inherit;
-    text-align: inherit
+    text-align: inherit;
+    position: relative;
 }
 
 @media (max-width: 767px) {
@@ -3686,7 +3687,7 @@ h4 {
 #sidebar .widget-title {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 20px;
+    margin: 0px;
     font-weight: 700;
     text-transform: inherit;
     text-align: inherit
@@ -18577,7 +18578,7 @@ div[class*=col-] >.item-wrap {
 }
 
 .sidebar-white .widget+.widget {
-    margin-top: 10px!important
+    margin-top: 5px!important
 }
 
 @media (max-width: 991px) {

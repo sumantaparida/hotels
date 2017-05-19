@@ -408,8 +408,8 @@ footer .top-footer {
   background-color: #f9f9f9;
   border: solid 1px #999;
   font-size: 14px;
-  border-radius: 5px;
-  padding: 5px 15px;
+  border-radius: 3px;
+  padding: 3px 15px;
   font-weight: 400;
 }
 .left-wrapper {
@@ -455,8 +455,33 @@ address {
   padding: 0px;
 }
 [data-modify] li {
-  display: inline;
   margin-right: 15px;
+  float: left;
+}
+[data-modify] li span {
+  display: inline-block;
+  padding: 3.5px 20px;
+  cursor: pointer;
+  margin: 0px;
+  font-weight: 500;
+  background-color: #f9f9f9;
+  color: #000;
+  border: solid 1px #585858;
+}
+[data-modify] li span .fa {
+  margin-right: 5px;
+}
+[data-modify] li span.active {
+  background-color: #585858;
+  color: #fff;
+}
+[data-modify] li span:first-child {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+[data-modify] li span:last-child {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 /* Save Upto */
 .save-up-to {
@@ -487,18 +512,44 @@ address {
 }
 .left-sort p, .right-sort p {
   margin-bottom: 0px;
-  padding: 5px 5px 0px 5px;
+  padding: 0px 5px;
+  float: left;
 }
 .left-sort p span, .right-sort p span {
-  display: inline-block;
+  float: left;
   margin-right: 8px;
   font-weight: 400;
-  color: #6b6b6b;
+  line-height: 32px;
   max-width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  position: relative;
+}
+
+.elstic_effect::before {
+  position: absolute;
+  content: '';
+  width: 10%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.elstic_effect.active::before {
+  width: 100%;
+  background-color: #02459b;
+
+}
+.elstic_effect.active a {
+  color: #02459b;
 }
 .left-sort p span a, .right-sort p span a {
-  color: #02459B;
+  color: #828284;
 }
