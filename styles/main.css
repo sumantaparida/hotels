@@ -445,6 +445,7 @@ li.headding input {
 .tButton {
   padding: 10px;
   font-size: 12px;
+  margin-right: 0px;
 }
 address {
   height: 16px;
@@ -453,6 +454,9 @@ address {
 [data-modify] {
   margin: 0px;
   padding: 0px;
+  height: 29px;
+  float: left;
+  width: 100%;
 }
 [data-modify] li {
   margin-right: 15px;

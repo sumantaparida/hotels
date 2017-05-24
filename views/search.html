@@ -100,7 +100,7 @@
                       <div class="label-wrap label-right hide-on-list">
                         <span class="label-status label-status-8 label label-default">For Rent</span>
                       </div>
-                      <div class="price hide-on-list"><span class="item-price">&#8377; 1,900.00/mo</span></div>
+                      <div class="price hide-on-list"><span class="item-price">&#8377; 1,900.00/mo <i>+ Taxes 1500</i></span></div>
                       <a class="hover-effect" href="#">
                         <img width="385" height="258" src="http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-06-385x258.jpg" class="attachment-houzez-property-thumb-image size-houzez-property-thumb-image wp-post-image" alt="" srcset="http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-06-385x258.jpg 385w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-06-300x202.jpg 300w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-06-768x516.jpg 768w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-06-1024x688.jpg 1024w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-06-150x101.jpg 150w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-06-350x235.jpg 350w, http://houzez01.favethemes.com/wp-content/uploads/2016/03/los-angeles-06.jpg 1170w"
                           sizes="(max-width: 385px) 100vw, 385px"> </a>
@@ -156,12 +156,12 @@
                     </div>
                   </div>
                   <div class="body-right table-cell hidden-gird-cell">
-                    <div class="info-row price"><span class="item-price">&#8377; 1,900.00</span></div>
+                    <div class="info-row price"><span class="item-price">&#8377; 1,900.00  <span class="taxes">+ Taxes 1500</span></span></div>
                     <div class="info-row phone text-right">
                       <a href="#" class="btn btn-primary tButton waves-effect">Select room <i class="fa fa-angle-right fa-right"></i></a>
                     </div>
                   </div>
-                  <div class="table-list full-width hide-on-list">
+                  <div class="table-list full-width" ng-if="isMobileView">
                     <div class="cell">
                       <div class="info-row amenities">
                         <p><span>Beds: 2</span><span>Baths: 2</span><span>Sq Ft: 1900</span></p>
@@ -176,16 +176,22 @@
                   </div>
                 </div>
               </div>
-
-              <div class="item-foot date hide-on-list">
-                <div class="item-foot-left">
-                  <p class="prop-user-agent"><i class="fa fa-user"></i> <a href="#">Andheri East-International Airport</a> </p>
+              <!-- // -->
+              <div class="item-foot">
+                <div class="col-xs-12 nopadding">
+                  <div class="item-foot-left">
+                    <p class="prop-user-agent"><i class="fa fa-user"></i> <a href="#">Travellers love this hotel for its location.</a></p>
+                  </div>
+                  <div class="item-foot-right">
+                    <p class="prop-date"><a href="#">About the hotel</a> <i class="fa fa-calendar"></i></p>
+                  </div>
                 </div>
-                <div class="item-foot-right">
-                  <p class="prop-date"><i class="fa fa-calendar"></i>1 year ago</p>
+                <!-- // -->
+                <div class="col-xs-12">
+                  sss
                 </div>
               </div>
-
+              <!-- // -->
             </div>
 
           </div>

@@ -2014,7 +2014,6 @@ h4 {
     font-size: 12px!important;
     line-height: 20px!important;
     margin: 0!important;
-    font-weight: 300!important
 }
 
 .detail h3 {
@@ -7192,7 +7191,7 @@ h4 {
 .item-body .hotel-feature span {
   color: #769bd8;
   margin-right: 7px;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
 }
 .item-body .amenities span .fa {
@@ -7287,6 +7286,12 @@ h4 {
 .price .item-price {
     display: block
 }
+.price .item-price .taxes {
+  display: block;
+  font-size: 12px;
+  color: #c1c1c1;
+  font-weight: 400;
+}
 
 .price .item-sub-price {
     display: block;
@@ -7311,13 +7316,20 @@ h4 {
 .item-foot .item-foot-right {
     float: right
 }
-
-.item-foot a,.item-foot p {
-    color: #9b9b9b
+.item-foot a {
+    color: #0275d8;
+    font-weight: 500;
 }
-
+.item-foot p {
+    color: #000;
+    font-weight: 500;
+}
 .item-foot i {
     margin-right: 5px
+}
+.item-foot-right i {
+  margin-right: 0px;
+  margin-left: 10px;
 }
 
 #section-body {
@@ -7997,7 +8009,7 @@ h4 {
 }
 
 .property-item .item-body {
-    padding: 10px 12px 10px 20px;
+    padding: 10px 12px 3px 20px;
     display: table-cell;
     vertical-align: top;
     overflow: hidden;

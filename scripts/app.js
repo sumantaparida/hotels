@@ -25,6 +25,10 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $url
 	//   requireBase: false
 	// }).hashPrefix('!');
 }]);
+app.run(function($rootScope) {
+  $rootScope.isMobileView = ($(window).width() < 767);
+});
+
 // flightController
 app.controller("hotelCtrl",['$scope','$state', function($scope, $state){
 	$scope.state2 = $state.is('hotel');
