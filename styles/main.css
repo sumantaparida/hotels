@@ -557,3 +557,74 @@ address {
 .left-sort p span a, .right-sort p span a {
   color: #828284;
 }
+
+/* ====Details Page Start==== */
+.addvance-search {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -webkit-box-shadow: 0 -1px 4px rgba(0,0,0,0.1) inset;
+  box-shadow: 0 -1px 4px rgba(0,0,0,0.1) inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addvance-search .date-wrapper .md-form {
+  max-width: inherit;
+  margin: 0px;
+}
+.md-form select {
+  display: block;
+  width: 100%;
+}
+.DetailsPage .modify-btn {
+  background-color: #5a95f5;
+  border: solid 1px #5a95f5;
+  color: #fff;
+}
+.contantWrapper {
+  background: #fff;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  position: relative;
+  -webkit-box-shadow: -2px 0 2px #eee,2px 0 2px #eee;
+  box-shadow: -2px 0 2px #eee,2px 0 2px #eee;
+}
+/* Left Wrapper */
+.left-wrapper {
+  padding: 0px;
+}
+.product_heading {
+  border-bottom: solid 1px #ddd;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.hotels_info span {
+  display: block;
+  font-size: 14px;
+  color: #999;
+}
+.star, .review {
+  float: left;
+}
+.star {
+  width: 150px;
+  margin-right: 15px;
+}
+.star P, .review {
+  margin-bottom: 0px;
+}
+.star P span, .review p span {
+  display: block;
+  color: #999;
+  font-size: 12px;
+}
+.star P span .fa {
+  color: #F86810;
+  font-size: 14px;
+}
+/* Right Wrapper */
+.right-wrapper {
+  border-left: solid 1px #ddd;
+  padding: 0px;
+}

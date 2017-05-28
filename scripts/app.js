@@ -13,6 +13,12 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $url
 	    controller: 'packagesCtrl',
 	    authenticate: true
 	  })
+		.state('details', {
+ 	    url: '/details',
+ 	    templateUrl: 'views/details.html',
+ 	    controller: 'detailsCtrl',
+ 	    authenticate: true
+ 	  })
 		.state('searchpage', {
 			url: '/searchpage',
 			templateUrl: 'views/search.html',
@@ -44,6 +50,12 @@ app.controller("packagesCtrl",['$scope','$state', function($scope, $state){
 }]);
 // hotelSearchController
 app.controller("searchCtrl",['$scope','$state', function($scope, $state){
+	$scope.state4 = $state.is('packages');
+	$('.datepicker').pickadate();
+	$('.mdb-select').material_select();
+}]);
+// hotelDetailsController
+app.controller("detailsCtrl",['$scope','$state', function($scope, $state){
 	$scope.state4 = $state.is('packages');
 	$('.datepicker').pickadate();
 	$('.mdb-select').material_select();
